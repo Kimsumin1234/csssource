@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 그룹 */
+      #title,
+      nav ~ h2 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        1. selector (선택자)
+         - class : 전역 속성인 class 를 이용하기
+         - id   : 전역 속성인 id 를 이용하기
+         - tag  : 태그 이용 (단점: 현재페이지 내의 동일한 태그에 모두 적용됨)
+         - 전체  : * 로 표현
+         - 자손(하위) : 자식 + 손자  형태) 부모선택자[공백]자식선택자
+         - 자식 : 형태) 부모선택자>자식선택자  응용) ul>li*3
+         - 형제 : + 혹은 ~  ex) 선택자 + 선택자(바로 뒤에 있는 선택자 요소만), 선택자 ~ 선택자(뒤에 있는 선택자 요소)
+         - 그룹 : 다양한 선택자 요소에 동일한 디자인을 적용, 동일한 디자인을 한꺼번에 적용가능
+     -->
+    <div>
+      <h1 id="title">css 기본 문법</h1>
+      <h2>그룹 선택자</h2>
+      <h2>그룹 선택자</h2>
+      <nav>
+        <h2>제목 1</h2>
+      </nav>
+      <h2>타이틀</h2>
+      <h2>타이틀</h2>
+    </div>
+  </body>
+</html>
