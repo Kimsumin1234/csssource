@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bg {
+        width: 200px;
+        height: 100px;
+        /* background-color: tomato; */
+        /* background: red; */
+      }
+      .bg {
+        width: 300px;
+        height: 300px;
+        border: 1px solid red;
+        background-image: url(../image/bg.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        backgroud
+         - 색상
+            background-color = background (축약 가능)
+
+         - 이미지
+            backgroud-image
+            backgroud-repeat : 이미지 반복 (기본은 repeat 상태, repeat-x 가로방향으로 반복)
+            backgroud-position : 이미지 위치 (기본은 가로방향:left / 세로방향:top, 숫자도 가능)
+            backgroud-attachment : 이미지 스크롤 여부
+              1) 배경 이미지가 요소를 따라서 스크롤이 될것인지 말것이지 여부
+                - scroll : 기본
+                - fixed : 뷰포트에 고정되어 요소와 같이 스크롤 되지 않음
+
+     -->
+    <div class="bg"></div>
+  </body>
+</html>

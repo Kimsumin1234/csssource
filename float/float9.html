@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체요소에 box-sizing 설정 */
+      * {
+        box-sizing: border-box;
+      }
+
+      /* header 요소 : 배경색 #333, 안쪽여백30, 가운데정렬, 글꼴크기35, 글자색 흰색 */
+      header {
+        background-color: #333;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* nav 요소 : 높이500px 배경색#ccc, 안쪽여백20 */
+      nav {
+        height: 500px;
+        background-color: #ccc;
+        padding: 20px;
+        width: 30%;
+        float: left;
+      }
+      nav ul li {
+        list-style-type: none;
+      }
+
+      /* article 요소 : 높이500px 배경색#f1f1f1, 안쪽여백20 */
+      article {
+        height: 500px;
+        background-color: #f1f1f1;
+        padding: 20px;
+        width: 70%;
+        float: left;
+      }
+
+      /* footer 요소 : 배경색#777, 안쪽여백10, 가운데정렬, 글자색 흰색 */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Cities</h2>
+    </header>
+    <section class="clearfix">
+      <nav>
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h1>London</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ea alias quibusdam asperiores ex sed illum qui, facilis quasi error omnis
+          beatae rerum eius, fugiat impedit dolorem sunt suscipit commodi?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi possimus iure, quisquam dolores, dolorum sint facilis reiciendis mollitia
+          ratione harum ipsa recusandae tempora accusamus nam doloremque numquam eaque aperiam officiis laboriosam veniam, aspernatur corrupti iusto
+          excepturi. Ab delectus recusandae, repellat ratione reiciendis consectetur doloribus, aperiam autem itaque quis inventore. Maiores quae
+          blanditiis error corrupti facere quasi, minus, expedita, iste et nihil harum repudiandae sunt consequatur eligendi aut? Distinctio labore
+          expedita similique suscipit quod vero nisi. Error architecto et eos cumque odit animi natus quaerat ut quia quibusdam cum dolor minima, a
+          magnam? Odit magni enim sint, nulla ducimus odio laudantium.
+        </p>
+      </article>
+    </section>
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>

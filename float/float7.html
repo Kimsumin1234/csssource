@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습 레이아웃(메뉴 만들기)</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: #333;
+
+        width: 50%;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+      li:hover {
+        background-color: blueviolet;
+      }
+      .container li {
+        float: left;
+        list-style-type: none;
+      }
+      /* a 태그는 인라인요소 이기 때문에 padding 상하를 인식하지 못함 */
+      /* display: block; 로 블럭요소로 만들어 준다 */
+      a {
+        padding: 14px 16px;
+        display: block;
+
+        color: white;
+        text-decoration: none;
+      }
+      .active {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="container clearfix">
+      <li>
+        <a href="#" class="active">Home</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">News</a>
+      </li>
+    </ul>
+  </body>
+</html>

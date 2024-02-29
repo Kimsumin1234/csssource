@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 50px;
+        background-color: blueviolet;
+        padding: 20px;
+        margin: 20px;
+        color: white;
+      }
+      span {
+        background-color: brown;
+        color: white;
+        padding: 20px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        블럭요소 vs 인라인요소
+
+        1. 블럭요소 (div)
+          - 한 행을 전체 사용
+          - width : 100% (기본값)
+          - height : 0 (기본값)
+          - 내용이 없어도 강제로 width,height 지정 가능
+          - margin,padding 작동 잘됨
+
+
+        2. 인라인요소 (span)
+          - 내용만큼만 사용(남은건 옆에 놔둠)
+          - width,height => 강제 지정 불가(자식요소에 의해 width,height 결정됨)
+          - 인라인요소 사이에 엔터가 있으면 기본으로 공백이 한칸 들어간다
+          - margin,padding : 상하 부분이 제대로 동작하지 않음
+
+
+        3. 블럭요소 => 인라인요소, 인라인요소 => 블럭요소 변환
+          - display: block, display: inline
+          - display: inline-block (혼합 형태)
+          - display: none; (요소를 안보이게함)
+     -->
+    <div>안녕하세요</div>
+    <span>안녕하세요</span>
+    <span>안녕하세요</span>
+    <span>안녕하세요</span>
+    <span>안녕하세요</span>
+  </body>
+</html>
