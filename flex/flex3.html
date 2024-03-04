@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-wrap: wrap-reverse; */
+        border: 2px solid;
+        justify-content: space-evenly;
+      }
+      .container div {
+        width: 100px;
+        height: 100px;
+      }
+      .item:nth-of-type(1) {
+        background-color: red;
+      }
+      .item:nth-of-type(2) {
+        background-color: blue;
+      }
+      .item:nth-of-type(3) {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        레이아웃 : 기본적인 구조는 위아래 수직 구성(스크롤 사용)
+
+         1. 수평(왼쪽 => 오른쪽)
+         
+          1) float
+          2) inline-block 
+          3) flex
+           - 부모요소에 display: flex; 을 넣는다
+          
+           - flex-direction(방향): row(기본), column(위->아래), row-reverse, column-reverse
+           - flex-wrap(여러줄 허용 여부) : wrap(여러줄:맨 끝에부터 아래줄로), nowrap(기본:한줄), wrap-reverse(여러줄:맨첫번째 부터 아래줄로)
+           - justify-content(주축 정렬) : 빈공간을 이동시킬수있다 flex-start(기본-왼쪽정렬), flex-end(오른쪽정렬), center, space-between(첫요소는 왼쪽,마지막요소는 오른쪽에 하고 요소 사이에 빈공간 배치), space-around(모든요소 사이에 빈공간 배치,가운데 배치 요소는 빈공간이 2배), space-evenly(빈공간 동일하게)
+               주축 : 요소가 배치되는 방향 (flex-direction: row 일경우, 가로 방향이 주축)
+               보조(교차)축 : 주축과 교차 되는 축 (flex-direction: row 일경우, 세로 방향이 보조축)
+           - align-content(교차축 정렬) : 
+     -->
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus quasi, commodi maxime ratione assumenda, nam eligendi,
+      minus veniam exercitationem porro eos iusto voluptatum unde nisi illum dignissimos cumque eveniet.
+    </p>
+  </body>
+</html>

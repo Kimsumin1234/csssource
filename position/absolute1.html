@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      img {
+        vertical-align: top;
+      }
+      .box {
+        border: 1px solid black;
+        position: absolute;
+        left: 80px;
+        top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- absolute - 위치 상 부모 요소를 기준으로 배치
+    
+         부모요소 : 부모요소를 지정하지 않으면 화면(뷰포트)이 기준이 됨 => fixed 랑 비슷해서 이방식은 사용않함
+                    position 이 부여된 다른 요소가 부모요소가 된다 => 대부분 relative 가 부모요소가 된다
+                    - 값 부여 가능 => 부모요소 밖으로 나갈수있다
+                    box 크기가 일정치 않을경우 반대쪽 부모요소를 기준으로 위치선정을 하면된다
+                    부모의크기도 일정치 않을경우 % 를 사용한다
+                    연산도 사용가능 => bottom: calc(100% + 10px); 
+    -->
+    <div class="box">
+      <img src="https://placehold.co/100" alt="" />
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam perspiciatis enim quis iste a aspernatur illum illo numquam aliquam, error vel
+      earum. Eaque ipsum molestiae voluptates quaerat velit harum dolore corporis sed, cupiditate dicta, illo earum eum exercitationem quos quod unde!
+      Minima dolor adipisci laudantium eveniet blanditiis, velit odio! Ea, rem. Incidunt numquam repellendus quia dolorum eum! Nostrum iure minima
+      illo, necessitatibus quod tenetur, eos possimus, odio quibusdam optio voluptatibus unde. Enim in magni dolore dolor eos facere fugiat. Inventore
+      excepturi nam quia. Aliquam, voluptates? Tempore, soluta quasi. Impedit saepe minus beatae delectus sapiente veniam ducimus, labore sint nam
+      corrupti.
+    </p>
+  </body>
+</html>

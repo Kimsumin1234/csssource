@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        border: 2px solid;
+      }
+      .container div {
+        width: 100px;
+        height: 100px;
+      }
+      .item:nth-of-type(1) {
+        background-color: red;
+        order: 1;
+      }
+      .item:nth-of-type(2) {
+        background-color: blue;
+      }
+      .item:nth-of-type(3) {
+        background-color: green;
+      }
+      .item:nth-of-type(4) {
+        background-color: yellow;
+      }
+      .item:nth-of-type(5) {
+        background-color: pink;
+      }
+      .item:nth-of-type(6) {
+        background-color: silver;
+        order: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        레이아웃 : 기본적인 구조는 위아래 수직 구성(스크롤 사용)
+
+         1. 수평(왼쪽 => 오른쪽)
+         
+          1) float
+          2) inline-block 
+          3) flex
+           - 부모요소에 display: flex; 을 넣는다
+          
+           1. 부모요소에 넣는 값
+           
+           - flex-direction(방향): row(기본), column(위->아래), row-reverse, column-reverse
+           - flex-wrap(여러줄 허용 여부) : wrap(여러줄:맨 끝에부터 아래줄로), nowrap(기본:한줄), wrap-reverse(여러줄:맨첫번째 부터 아래줄로)
+
+           - justify-content(주축 정렬) : 빈공간을 이동시킬수있다 flex-start(기본-왼쪽정렬), flex-end(오른쪽정렬), center, space-between(첫요소는 왼쪽,마지막요소는 오른쪽에 하고 요소 사이에 빈공간 배치), space-around(모든요소 사이에 빈공간 배치,가운데 배치 요소는 빈공간이 2배), space-evenly(빈공간 동일하게)
+               주축 : 요소가 배치되는 방향 (flex-direction: row 일경우, 가로 방향이 주축)
+               보조(교차)축 : 주축과 교차 되는 축 (flex-direction: row 일경우, 세로 방향이 보조축)
+
+           - align-content(교차축 정렬) : 교차 축 공간이 있고, 주축에서 여러줄(wrap)을 허용한 상태
+               stretch : 부모의 height 에 맞춰 자식 높이가 늘어남 (기본-공백이 안 생김)
+               flex-start, flex-end, center, space-between, space-around, space-evenly
+
+           - align-items : 한 줄 일 때 정렬 (우선순위 align-content > align-items)
+               stretch : 부모요소 교차축을 채우기 위해 자식요소 를 교차축 방향으로 늘림(고정값 제외하고 늘림)
+               baseline : 자식요소를 문자 기준선에 정렬
+                flex-start, flex-end, center
+
+
+           2. 자식요소에 넣는 값
+
+           - order : 자식요소 순서를 설정
+                     기본값 0, 음수값 지정 가능, 음수값일 경우 앞 쪽에 배치, order 값이 같은 경우 태그 순서
+           - flex-grow : 자식요소 너비 증가 비율 (width 가 auto 여야 의미가 있음)
+     -->
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus quasi, commodi maxime ratione assumenda, nam eligendi,
+      minus veniam exercitationem porro eos iusto voluptatum unde nisi illum dignissimos cumque eveniet.
+    </p>
+  </body>
+</html>
