@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체요소 크기 산정시 border 포함 */
+      /* body 배경색 #ecf0f1 */
+      /* wrapper max-width 60rem, width 100%, margin 2rem auto */
+      /* flexbg : flex 부모로 설정 */
+      /* main : 배경색 흰색, width 60%, 패딩 1.618rem */
+      /* sidebar : width 20%, 패딩 1.618rem */
+      /* left : 배경색 #3498db */
+      /* right : 배경색 #34495e */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #ecf0f1;
+      }
+      .wrapper {
+        width: 100%;
+        max-width: 60rem;
+        margin: 2rem auto;
+      }
+
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        background-color: white;
+        width: 60%;
+        padding: 1.618rem;
+        order: 2;
+      }
+      .flexbg .sidebar {
+        width: 20%;
+        padding: 1.618rem;
+        color: white;
+      }
+      .flexbg .left {
+        order: 1;
+        background-color: #3498db;
+      }
+
+      .flexbg .right {
+        background-color: #34495e;
+        order: 3;
+      }
+
+      /* 테블릿 화면 설정 */
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+      }
+
+      /* 모바일 화면 설정 */
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, labore beatae eveniet aut consequuntur mollitia quas ad voluptate ducimus
+          rerum accusamus quam! Nostrum fugiat commodi corporis, exercitationem doloremque accusamus! Nam dignissimos quaerat omnis tenetur. Expedita
+          ratione animi sint molestias possimus accusamus error doloribus illum minima? Quam explicabo debitis animi! Exercitationem earum blanditiis
+          rerum, pariatur dolorum soluta porro vero expedita, provident, culpa modi aliquid impedit maiores corporis fuga. Minima obcaecati, ipsam
+          mollitia sit quo corporis placeat, aperiam quaerat minus asperiores modi optio eligendi, et sed facilis temporibus neque quae consequatur
+          ducimus eum nobis distinctio! Repellendus reprehenderit, molestias id natus facere nobis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, labore beatae eveniet aut consequuntur mollitia quas ad voluptate ducimus
+          rerum accusamus quam! Nostrum fugiat commodi corporis, exercitationem doloremque accusamus! Nam dignissimos quaerat omnis tenetur. Expedita
+          ratione animi sint molestias possimus accusamus error doloribus illum minima? Quam explicabo debitis animi! Exercitationem earum blanditiis
+          rerum, pariatur dolorum soluta porro vero expedita, provident, culpa modi aliquid impedit maiores corporis fuga. Minima obcaecati, ipsam
+          mollitia sit quo corporis placeat, aperiam quaerat minus asperiores modi optio eligendi, et sed facilis temporibus neque quae consequatur
+          ducimus eum nobis distinctio! Repellendus reprehenderit, molestias id natus facere nobis.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium tempore optio autem, facere sapiente eum. Alias minus fugiat veniam ab
+          repellat quis deleniti commodi officiis eius illum at nihil praesentium, aliquam blanditiis adipisci molestias eum cupiditate totam omnis
+          nisi magnam quia temporibus atque voluptatum. Enim eaque odio natus deleniti laudantium!
+        </p>
+      </aside>
+      <aside class="sidebar right">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium tempore optio autem, facere sapiente eum. Alias minus fugiat veniam ab
+          repellat quis deleniti commodi officiis eius illum at nihil praesentium, aliquam blanditiis adipisci molestias eum cupiditate totam omnis
+          nisi magnam quia temporibus atque voluptatum. Enim eaque odio natus deleniti laudantium!
+        </p>
+      </aside>
+    </div>
+  </body>
+</html>

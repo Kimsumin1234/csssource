@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* main-content, sidebar : 배경색 #eee, 패딩 6, 바깥여백 10 */
+      /* panel : 배경색 흰색, 안쪽여백 20, 바깥여백 10 */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: #333338;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #444;
+      }
+      .container {
+        display: flex;
+      }
+      .main-content,
+      .sidebar {
+        background-color: #eeeeeeee;
+        padding: 6px;
+        margin: 10px;
+      }
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .panel {
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-content">
+        <div class="panel">
+          <h1>Main Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe temporibus placeat beatae? Qui, id quisquam optio eum voluptatem autem,
+            necessitatibus aliquid ad quo fugit facilis fugiat accusantium iusto illum deleniti.
+          </p>
+          <img src="https://placehold.co/100x120" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur amet quod vitae atque eligendi, facere obcaecati et repellendus. Quo,
+            esse. Quod, error odit? Quae dolores sequi sapiente nihil blanditiis in, ea error ex possimus eaque quam nam inventore quidem dicta illo
+            impedit itaque illum officiis incidunt officia ad quia. Corporis?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolore, error corrupti libero quas voluptatem! Id ut quae, voluptate
+            adipisci cumque eligendi vel perspiciatis rerum consequuntur dolore alias reiciendis aut!
+          </p>
+          <h3>Subtitle</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolore, error corrupti libero quas voluptatem! Id ut quae, voluptate
+            adipisci cumque eligendi vel perspiciatis rerum consequuntur dolore alias reiciendis aut!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolore, error corrupti libero quas voluptatem! Id ut quae, voluptate
+            adipisci cumque eligendi vel perspiciatis rerum consequuntur dolore alias reiciendis aut!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolore, error corrupti libero quas voluptatem! Id ut quae, voluptate
+            adipisci cumque eligendi vel perspiciatis rerum consequuntur dolore alias reiciendis aut!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolore, error corrupti libero quas voluptatem! Id ut quae, voluptate
+            adipisci cumque eligendi vel perspiciatis rerum consequuntur dolore alias reiciendis aut!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolore, error corrupti libero quas voluptatem! Id ut quae, voluptate
+            adipisci cumque eligendi vel perspiciatis rerum consequuntur dolore alias reiciendis aut!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolore, error corrupti libero quas voluptatem! Id ut quae, voluptate
+            adipisci cumque eligendi vel perspiciatis rerum consequuntur dolore alias reiciendis aut!
+          </p>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 1</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi error et nulla, optio quidem tempora molestiae rem doloremque,
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 2</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="panel">
+          <h3>Item 3</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi error et nulla, optio quidem</p>
+        </div>
+        <div class="panel">
+          <h3>Item 4</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi error et nulla</p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
