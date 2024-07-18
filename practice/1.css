@@ -1,15 +1,15 @@
-.line-1 ul {
+body {
+  padding: 20px 200px;
+}
+.line-1 {
   display: flex;
+  justify-content: space-around;
+  border: 1px solid;
 }
 
-.line-1 ul li {
-  list-style-type: none;
-  flex-direction: row;
-}
-.line-1 ul li a {
+.line-1 a {
   text-decoration: none;
   color: black;
   border: 2px solid;
   padding: 10px;
-  justify-content: center;
 }
